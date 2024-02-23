@@ -9,6 +9,15 @@
   <title>Frontend Mentor | Social links profile</title>
 
   <style>
+    :root {
+      --color-green: hsl(75, 94%, 57%);
+
+      --color-white: hsl(0, 0%, 100%);
+      --color-grey: hsl(0, 0%, 20%);
+      --color-dark-grey: hsl(0, 0%, 12%);
+      --color-off-black: hsl(0, 0%, 8%);
+    }
+
     @font-face {
       font-family: "Inter";
       src: url("assets/fonts/static/Inter-Regular.ttf") format("truetype");
@@ -32,8 +41,8 @@
 
     body {
       font-family: "Inter", Arial, Helvetica, sans-serif;
-      background: hsl(0, 0%, 8%);
-      color: hsl(0, 0%, 100%);
+      background: var(--color-off-black);
+      color: var(--color-white);
     }
 
     .container {
@@ -45,7 +54,7 @@
 
     #social-links-profile {
       width: 230px;
-      background-color: hsl(0, 0%, 12%);
+      background-color: var(--color-dark-grey);
       border-radius: 10px;
       margin: 10px;
       padding: 15px;
@@ -69,12 +78,12 @@
     #social-links-profile .profile-location {
       font-size: 10px;
       font-weight: 600;
-      color: hsl(75, 94%, 57%);
+      color: var(--color-green);
       margin-top: 8px;
     }
 
     #social-links-profile .profile-info {
-      color: hsl(0, 0%, 100%);
+      color: var(--color-white);
       font-size: 10px;
       margin-top: 18px;
       margin-bottom: 18px;
@@ -82,8 +91,8 @@
 
     #social-links-profile .profile-button {
       font-size: 10px;
-      color: hsl(0, 0%, 100%);
-      background-color: hsl(0, 0%, 20%);
+      color: var(--color-white);
+      background-color: var(--color-grey);
       display: block;
       margin: 8px;
       padding: 8px;
@@ -94,13 +103,13 @@
     }
 
     #social-links-profile .profile-button:hover {
-      background-color: hsl(75, 94%, 57%);
-      color: hsl(0, 0%, 12%);
+      background-color: var(--color-green);
+      color: var(--color-dark-grey);
       cursor: pointer;
     }
 
     .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    .attribution a { color: var(--color-green); }
   </style>
 </head>
 <body>
