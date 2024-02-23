@@ -26,7 +26,8 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Social Links Profile](https://radiant-blini-3eafef.netlify.app/social-links-profile/)
+- FrontendMentor Site URL: [Frontend Mentor Social Links Profile](https://www.frontendmentor.io/solutions/social-links-profile-using-html-css-3FGP2lf_gA)
+- Live Site URL: [Live Social Links Profile](https://radiant-blini-3eafef.netlify.app/social-links-profile/)
 
 ## My process
 
