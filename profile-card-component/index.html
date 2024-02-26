@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+  <title>Frontend Mentor | Profile card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    :root {
+      --color-dark-cyan: hsl(185, 75%, 39%);
+      --color-very-dark-desaturated-blue: hsl(229, 23%, 23%);
+      --color-dark-grayish-blue: hsl(227, 10%, 46%);
+
+      --color-dark-grey: hsl(0, 0%, 59%);
+      --color-white: hsl(0, 0%, 100%);
+
+      --font-family: "Kumbh Sans", sans-serif;
+      --font-size: 1.125rem;
+
+      --font-weight-regular: 400;
+      --font-weight-bold: 700;
+    }
+
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    html,
+    body {
+      width: 100%;
+      height: 100%;
+    }
+
+    body {
+      font-family: var(--font-family);
+      font-optical-sizing: auto;
+      font-weight: var(--font-weight-regular);
+      font-style: normal;
+      font-variation-settings: "YOPQ" 300;
+      font-size: var(--font-size);
+
+      background: url("./images/bg-pattern-top.svg"), url("./images/bg-pattern-bottom.svg");
+      background-position: right 50vw bottom 50vh, left 50vw top 50vh;
+      background-repeat: no-repeat, no-repeat;
+      background-color: var(--color-dark-cyan);
+
+      -webkit-font-smoothing: antialiased;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .profile-card {
+      background-color: var(--color-white);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      width: 350px;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    .profile-card .profile-background-img {
+      background: url(images/bg-pattern-card.svg) no-repeat center center/cover;
+      height: 150px;
+      display: block;
+      width: 100%;
+    }
+
+    .profile-card .profile-img {
+      background: url("./images/image-victor.jpg") no-repeat center center/cover;
+      width: 100px;
+      height: 100px;
+      
+      border-radius: 50%;
+      border: 3px solid var(--color-white);
+      margin-top: -50px;
+    }
+
+    .profile-card .profile-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      margin-top: 2rem;
+    }
+
+    .profile-card .profile-content .profile-name {
+      display: inline-block;
+      font-size: var(--font-size);
+      font-weight: var(--font-weight-bold);
+      margin-right: 10px;
+    }
+
+    .profile-card .profile-content .profile-age {
+      display: inline-block;
+      color: var(--color-dark-grey);
+    }
+
+    .profile-card .profile-content .profile-location {
+      margin-top: 10px;
+      font-size: 1rem;
+      color: var(--color-dark-grey);
+    }
+
+    .profile-card .profile-content .profile-divider {
+      margin-top: 1rem;
+      border: 0;
+      border-bottom: 1px solid var(--color-dark-grey);
+      opacity: 0.3;
+      width: 100%;
+    }
+
+    .profile-card .profile-content .profile-socialmedia {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-evenly;
+      margin-top: 1rem;
+      width: 100%;
+    }
+
+    .profile-card .profile-content .profile-socialmedia-group {
+      text-align: center;
+      margin: 1rem;
+    }
+    
+    .profile-card .profile-content .profile-socialmedia .profile-socialmedia-group .profile-socialmedia-number {
+      font-size: var(--font-size);
+    }
+
+    .profile-card .profile-content .profile-socialmedia .profile-socialmedia-group .profile-socialmedia-type {
+      font-size: 0.8rem;
+      margin-top:0.3rem;
+      color: var(--color-dark-grey);
+    }
+
+    footer { margin-top: 1rem; color: var(--color-white); }
+
+    .attribution { font-size: 0.75rem; text-align: center; }
+    .attribution a { color: var(--color-white); }
+  </style>
+</head>
+<body>
+  <main class="profile-card">
+    <div class="profile-background-img"></div>
+    <div class="profile-img"></div>
+
+    <div class="profile-content">
+      <div>
+        <h1 class="profile-name">Victor Crest</h1>
+        <p class="profile-age">26</p>
+      </div>
+      <div class="profile-location">London</div>
+      <hr class="profile-divider" />
+
+      <div class="profile-socialmedia">
+        <div class="profile-socialmedia-group">
+          <h2 class="profile-socialmedia-number">80K</h2>
+          <p class="profile-socialmedia-type">Followers</p>
+        </div>
+
+        <div class="profile-socialmedia-group">
+          <h2 class="profile-socialmedia-number">803K</h2>
+          <p class="profile-socialmedia-type">Likes</p>
+        </div>
+
+        <div class="profile-socialmedia-group">
+          <h2 class="profile-socialmedia-number">1.4K</h2>
+          <p class="profile-socialmedia-type">Photos</p>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="https://github.com/bv-andrease">AndyE</a>.
+    </div>
+  </footer>
+</body>
+</html>
