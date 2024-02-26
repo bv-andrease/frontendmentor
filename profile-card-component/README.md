@@ -28,8 +28,8 @@ This is a solution to the [Profile card component challenge on Frontend Mentor](
 
 ### Links
 
-- FrontendMentor Site URL: [Frontend Mentor Profile Card Component](https://your-solution-url.com)
-- Live Site URL: [Live Profile Card Component](https://your-live-site-url.com)
+- FrontendMentor Site URL: [Frontend Mentor Profile Card Component](https://www.frontendmentor.io/solutions/profile-card-component-7ozEhOGR6i)
+- Live Site URL: [Live Profile Card Component](https://radiant-blini-3eafef.netlify.app/profile-card-component/)
 
 ## My process
 
